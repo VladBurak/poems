@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: 'Courier Prime', monospace; 
+    font-size: 13px;
+    line-height: 1.4;
+    color: black;
+
+}
+
+*,
+*:before,
+*:after { 
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+.container{ 
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro{
+    width: 100%;
+    height: 100vh;
+    background: url("../images/intro.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    padding-top: 35px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+}
+
+.header__logo{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(31, 27, 23);
+}
+
+.nav{
+    font-size: 22px;
+}
+
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    color: rgb(31, 27, 23);
+
+    text-decoration: none;
+    position: relative;
+
+
+}
+
+.nav__link:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    display: none;
+
+    background-color: black;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav__link:hover{
+    display: block;
+}
